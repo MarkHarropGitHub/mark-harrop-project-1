@@ -1,0 +1,30 @@
+nav {
+    background: $primary3;
+    font-family: $headerFont;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $black;
+        }
+
+        a:hover,
+        a:focus {
+            color: $white;
+        }
+    }
+}
+
+.logo {
+    font-size: $headerFontSize2;
+    &:hover {
+        color: $black;
+    }
+}
