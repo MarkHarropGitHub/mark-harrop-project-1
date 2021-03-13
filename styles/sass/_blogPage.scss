@@ -1,0 +1,22 @@
+.blogPageImageContainer img {
+    width: 100vw;
+}
+
+.blogTitle {
+    background: $primary4;
+    .wrapper {
+        position: relative;
+        bottom: 130px;
+    }
+}
+
+.blockImageContainer {
+    width: 30%;
+    padding: 40px;
+    .blogBorder {
+        background: $white;
+        img {
+            width: 80%;
+        }
+    }
+}

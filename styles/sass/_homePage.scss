@@ -1,6 +1,47 @@
-header {
+.homePage {
     background: $primary3;
-    h1 {
-        font-size: $headerFontSize1;
+    height: 75vh;
+    min-height: 800px;
+    overflow: hidden;
+    .wrapper {
+        max-width: 1200px;
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        .imageContainer {
+            width: 35vw;
+            .headerImage {
+                position: relative;
+                top: 50px;
+                width: 80%;
+                box-shadow: 20px 20px white;
+            }
+        }
     }
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 7rem;
+        text-transform: uppercase;
+        height: 100%;
+        padding-left: 40px;
+    }
+}
+
+.section1 {
+    background-color: $primary4;
+}
+
+button {
+    background: $accent;
+    font-family: $headerFont;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    width: 160px;
+    padding: 10px;
 }
