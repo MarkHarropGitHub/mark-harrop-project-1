@@ -23,8 +23,8 @@
 
     <nav id="home" class="innerWrapper"> 
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./index.html">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
         <h3>Harper</h3>
         <ul>
@@ -38,7 +38,7 @@
     <!-- Header begins -->
 
     <header class="homePage"> 
-        <div class="wrapper">
+        <div class="wrapper flex">
             <div class="imageContainer">
                 <img class="headerImage" src="./assets/home/home-image-1.jpg" alt="overhead image of Harper surrounded by balloons">
             </div>
@@ -56,7 +56,7 @@
 
     <main>
         <section class="section1" id="about">
-            <div class="wrapper whosHarper">
+            <div class="whosHarper">
                 <h3>Who's Harper?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni repellendus nam sapiente, repudiandae tempora similique, incidunt at eos nulla, placeat quo doloremque. Magni voluptas est ex porro ea iste excepturi nulla. Neque, adipisci?</p>
                 <button>Find out more</button>
@@ -65,9 +65,9 @@
                 <img class="homeImage2" src="./assets/home/home-image-2.jpg" alt="angle view of a white condo on a clear day">
             </div>
         </section>
-        <section class="wrapper">
-            <div class="sectionFlex">
-                <div class="section2Flex">
+        <section class="wrapper section2">
+            <div class="flex">
+                <div class="iconFlex">
                     <div class="iconContainer">
                         <i class="fas fa-image"></i>
                     </div>
@@ -76,7 +76,7 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus laudantium ex aut et deleniti sapiente incidunt, pariatur corrupti magni porro voluptatem amet non, nostrum dolor atque.</p>
                     </div>
                 </div>
-                <div class="section2Flex">
+                <div class="iconFlex">
                     <div class="iconContainer">
                         <i class="fas fa-user"></i>
                     </div>
@@ -86,56 +86,60 @@
                     </div>
                 </div>
             </div>
-
-        <div class="sectionFlex">
-            <div class="section2Flex">
-                <div class="iconContainer">
-                    <i class="fas fa-desktop"></i>
+            <div class="flex">
+                <div class="iconFlex">
+                    <div class="iconContainer">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="textContainer">
+                        <h3>Blog</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus laudantium ex aut et deleniti sapiente incidunt, pariatur corrupti magni porro voluptatem amet non, nostrum dolor atque.</p>
+                    </div>
                 </div>
-                <div class="textContainer">
-                    <h3>Blog</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus laudantium ex aut et deleniti sapiente incidunt, pariatur corrupti magni porro voluptatem amet non, nostrum dolor atque.</p>
+                <div class="iconFlex">
+                    <div class="iconContainer">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="textContainer">
+                        <h3>Contact me</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus laudantium ex aut et deleniti sapiente incidunt, pariatur corrupti magni porro voluptatem amet non, nostrum dolor atque.</p>
+                    </div>
                 </div>
             </div>
-            <div class="section2Flex">
-                <div class="iconContainer">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <div class="textContainer">
-                    <h3>Contact me</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus laudantium ex aut et deleniti sapiente incidunt, pariatur corrupti magni porro voluptatem amet non, nostrum dolor atque.</p>
-                </div>
-            </div>
-        </div>
         </section>
         <section class="section3">
-            <div class="surfBackground">
-                <div class="wrapper">
-                    <img src="./assets/home/home-image-3.jpg" alt="two surfers out on the ocean at dusk">
+            <div class="flex">
+                <div class="surfBackground">
+                    <div class="wrapper surfImage">
+                        <img src="./assets/home/home-image-3.jpg" alt="two surfers out on the ocean at dusk">
+                    </div>
+                </div>
+                <div>
+                    <h4>Harper's travels</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, omnis. Dicta corrupti nobis sed pariatur labore quod, voluptate porro quam dolore repellendus facere expedita atque magnam laboriosam ad molestias reiciendis dolorem! Tenetur, asperiores illum.</p>
+                    <button>Read more</button>
                 </div>
             </div>
-            <div>
-                <h4>Harper's travels</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, omnis. Dicta corrupti nobis sed pariatur labore quod, voluptate porro quam dolore repellendus facere expedita atque magnam laboriosam ad molestias reiciendis dolorem! Tenetur, asperiores illum.</p>
-                <button>Read more</button>
-            </div>
-            <div>
-                <h4>Favourite things</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, omnis. Dicta corrupti nobis sed pariatur labore quod, voluptate porro quam dolore repellendus facere expedita atque magnam laboriosam ad molestias reiciendis dolorem! Tenetur, asperiores illum.</p>
-                <button>Read more</button>
-            </div>
-            <div class="backgroundColor">
-                <div class="wrapper">
-                    <img src="./assets/home/home-image-4.jpg" alt="two surfers out on the ocean at dusk">
+            <div class="flex">
+                <div class="favourite">
+                    <h4>Favourite things</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, omnis. Dicta corrupti nobis sed pariatur labore quod, voluptate porro quam dolore repellendus facere expedita atque magnam laboriosam ad molestias reiciendis dolorem! Tenetur, asperiores illum.</p>
+                    <button>Read more</button>
+                </div>
+                <div class="factoryBackground">
+                    <div>
+                        <img src="./assets/home/home-image-4.jpg" alt="two surfers out on the ocean at dusk">
+                    </div>
                 </div>
             </div>
+            
         </section>
         <section class="section4">
-            <div>
-                <div>
-                    <img src="./assets/home/home-image-5.jpg" alt="Harper's friend looking slightly off camera">
+            <div class="wrapper flex">
+                <div class="journeyImageContainer">
+                    <img class="journeyImage" src="./assets/home/home-image-5.jpg" alt="Harper's friend looking slightly off camera">
                 </div>
-                <div>
+                <div class="journeyTextContainer">
                     <h3>Harper's Journey</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestias dolor neque voluptate fugit, quod reprehenderit sit facilis consectetur iste earum harum voluptatibus in natus amet laudantium, repellendus aliquam nihil debitis minima perspiciatis recusandae. Accusantium illo voluptatem veniam ratione dolorem deleniti culpa minus corrupti commodi? Illum, corrupti reiciendis. Vitae ad consectetur suscipit sint illum.
                     </p>
@@ -145,14 +149,16 @@
         </section>
         <section class="section5">
             <div class="wrapper">
-                <div>
-                    <img src="./assets/home/home-image-6.jpg" alt="angle view looking up at a pink sided building on a clear day">
-                </div>
-                <div>
-                    <img src="./assets/home/home-image-7.jpg" alt="a plane flying under an approaching storm system">
-                </div>
-                <div>
-                    <img src="./assets/home/home-image-8.jpg" alt="abstract image appearing as pink and blue fog ">
+                <div class="flex">
+                    <div class="section5ImageContainer">
+                        <img class="sectFiveImage" src="./assets/home/home-image-6.jpg" alt="angle view looking up at a pink sided building on a clear day">
+                    </div>
+                    <div class="section5ImageContainer">
+                        <img class="sectFiveImage" src="./assets/home/home-image-7.jpg" alt="a plane flying under an approaching storm system">
+                    </div>
+                    <div class="section5ImageContainer">
+                        <img class=sectFiveImage src="./assets/home/home-image-8.jpg" alt="abstract image appearing as pink and blue fog ">
+                    </div>
                 </div>
             </div>
         </section>

@@ -12,8 +12,12 @@ html {
     font-size: 125%;
 }
 
-body,
-main {
+html,
+body {
+    height: 100%;
+}
+
+* {
     padding: 0;
     margin: 0;
 }
@@ -31,6 +35,18 @@ h6 {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    letter-spacing: 1px;
+}
+
+p,
+ul li {
+    letter-spacing: 0px;
+}
 h1 {
     font-size: $headerFontSize1;
 }

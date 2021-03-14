@@ -1,14 +1,19 @@
-.contactPageImageContainer img {
-    width: 100%;
+.contactPageImageContainer {
+    height: 360px;
+    img {
+        width: 100%;
+    }
 }
+
+
 
 section {
     background: $primary4;
-    padding-top: 75px;
+    padding-top: 50px;
     margin: 0;
-    .contactPosition {
+    .contactPosition h2 {
         position: relative;
-        bottom: 125px;
+        bottom: 105px;
     }
 }
 
