@@ -1,0 +1,38 @@
+.contactPageImageContainer img {
+    width: 100%;
+}
+
+section {
+    background: $primary4;
+    padding-top: 75px;
+    margin: 0;
+    .contactPosition {
+        position: relative;
+        bottom: 125px;
+    }
+}
+
+.contactInfo {
+    background: $white;
+    padding-top: 50px;
+}
+.contactFlex {
+    display: flex;
+    padding: 20px;
+}
+
+.contactFlex p i {
+    color: $primary1;
+}
+
+.contactAddress p i {
+    color: $black;
+}
+
+.contactAddress {
+    padding: 20px;
+    ul {
+    list-style: none;
+    padding: 0;
+    }
+}

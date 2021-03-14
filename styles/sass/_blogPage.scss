@@ -1,22 +1,97 @@
 .blogPageImageContainer img {
-    width: 100vw;
+    width: 100%;
 }
 
-.blogTitle {
+// * {
+//     border: 1px solid red;
+// }
+
+main {
     background: $primary4;
-    .wrapper {
-        position: relative;
-        bottom: 130px;
+    padding-bottom: 50px;
+}
+
+.blogImageContainer {
+    background: $white;
+    padding: 20px;
+    width: 360px;
+    .blogImageContainer img {
+        width: 25vw;
+        height: auto;
     }
 }
 
-.blockImageContainer {
+.blogColumns {
+    display: flex;
+}
+
+.column1 {
     width: 30%;
-    padding: 40px;
-    .blogBorder {
-        background: $white;
-        img {
-            width: 80%;
-        }
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    padding-top: 0;
+    width: 70%;
+}
+
+.recentPosts,
+.blogPosts {
+    background: $white;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.blogPosts p {
+    padding: 0 20px;
+}
+
+.blogFlex {
+    display: flex;
+}
+.hide { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    input {
+        justify-content: space-evenly;
+        border: none;
+        width: 50%;
+        height: 60px;
+        padding-left: 20px;
     }
+    .textarea {
+        width: 100%;
+        height: 300px;
+        margin: 20px 0;
+       
+    }
+}
+
+form button {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    resize: none;
 }

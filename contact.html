@@ -22,21 +22,57 @@
 
 </head>
 <body>
-    <nav id="home" class="innerWrapper"> 
+    <nav id="home"> 
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./index.html">About</a></li>
         </ul>
-        <h2>Harper</h2>
+        <h3>Harper</h3>
         <ul>
             <li><a href="./blog.html">Blog</a></li>
         <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
     <header>
-        <div>
+        <div class="contactPageImageContainer">
             <img src="./assets/contact/contact-image-1.jpg" alt="purple blue water reflection">
         </div>
     </header>
+    <section class="sectionFlex">
+        <div class="wrapper contactPosition">
+            <h2>Contact me</h2>
+        </div>
+    </section>
+    <section class="wrapper sectionFlex">
+        <div class="contactInfo">
+            <div class="contactFlex">
+                <p><i class="fab fa-facebook-f"></i></p>
+                <p><i class="fab fa-twitter"></i></p>
+                <p><i class="fab fa-linkedin-in"></i></p>
+                <p><i class="fab fa-instagram"></i></p>
+            </div>
+            <div class="contactAddress">
+                <ul>
+                    <li>info<i class="fas fa-at"></i>email.com</li>
+                    <li>123-456-7890</li>
+                    <li>123 Queen Street West, Unit 10</li>
+                    <li>M5V2D5</li>
+                </ul>
+            </div>
+        </div>
+        <form class="contactForm" action="POST">
+            <label class="hide" for="name">Name</label>
+            <input type="name" class="name"id="name" placeholder="Name">
+            <label class="hide" for="email">Email address</label>
+            <input type="email" class="email" id="email" placeholder="Email address">
+            <label for=""></label>
+            <input type="text" class="textarea">
+            <button type="submit">Submit</button>
+        </form>
+
+    </section>
+    <footer>
+        <p>Copyright <i class="far fa-copyright"></i> 2018 HackerYou</p>
+    </footer>
 </body>
 </html>

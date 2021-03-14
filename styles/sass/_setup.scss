@@ -12,8 +12,10 @@ html {
     font-size: 125%;
 }
 
-body {
+body,
+main {
     padding: 0;
+    margin: 0;
 }
 
 h1,
@@ -21,21 +23,38 @@ h2,
 h3,
 h4,
 h5,
-h6
- {
+h6 {
     font-family: $headerFont;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: $headerFontSize1;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: $headerFontSize2;
+}
+
+h3 {
+    font-size: $headerFontSize3;
+}
+
+h4 {
+    font-size: $headerFontSize4
+}
+
+h5 {
+    font-size: $headerFontSize5;
 }
 
 p,
 .recentPosts ul li {
     font-family: $bodyFont;
-    font-size: 1rem;
+    font-size: $mainFontSize;
 }
 
 .wrapper {
