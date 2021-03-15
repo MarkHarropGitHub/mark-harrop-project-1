@@ -1,4 +1,4 @@
-// Header Section
+/* Header Section */
 
 .blogPageImageContainer {
     width: 100%;
@@ -8,12 +8,12 @@
     }
 }
 
-// * {
-//     border: 1px solid red;
-// }
+ * {
+     border: 1px solid red;
+ }
 
 
-// Main Section of Blog Begins
+/* Main Section of Blog Begins */
 
 body {
     background: $primary4;
@@ -127,4 +127,4 @@ textarea {
     resize: none;
 }
 
-// Main Section of Blog ends
+/* Main Section of Blog ends */

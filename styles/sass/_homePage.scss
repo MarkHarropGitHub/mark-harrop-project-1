@@ -1,4 +1,4 @@
-// Header Section for the Home Page Begins
+/* Header Section for the Home Page Begins */
 
 .homePage {
     background: $primary3;
@@ -45,9 +45,9 @@
 }
 
 
-// Main Section of the Home Page Begins
+/* Main Section of the Home Page Begins */
 
-// Section 1 Begins
+/* Section 1 Begins */
 
 .section1 {
     background: $primary4;
@@ -84,7 +84,7 @@ button:focus {
     color: $accent;
 }
 
-// Section 2 of Home Page Begins
+/* Section 2 of Home Page Begins */
 
 .flex,
 .iconFlex {
@@ -111,7 +111,7 @@ button:focus {
     }
 }
 
-// Section 3 of Home Page Begins
+/* Section 3 of Home Page Begins */
 
 .section3,
 .section5 {
@@ -137,7 +137,7 @@ button:focus {
     background: $primary3;
 }
 
-// Section 4 of Home Page Begins
+/* Section 4 of Home Page Begins */
 
 .section4 {
     padding: 50px 0;
@@ -156,7 +156,7 @@ button:focus {
     margin-left: 50px;
 }
 
-// Section 5 of Home Page Begins additional text
+/* Section 5 of Home Page Begins additional text */
 
 .section5 {
     padding: 50px 0;
@@ -165,7 +165,6 @@ button:focus {
     width: 100%;
     margin-right: 50px;
     padding-top: 25px;
-    // justify-content: space-between;
     .sectFiveImage {
         width: 100%;
     }

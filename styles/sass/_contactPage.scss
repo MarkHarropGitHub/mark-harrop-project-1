@@ -1,11 +1,11 @@
+/* Header Section of Contact Page Styling */
+
 .contactPageImageContainer {
     height: 360px;
     img {
         width: 100%;
     }
 }
-
-
 
 section {
     background: $primary4;
@@ -23,11 +23,16 @@ section {
 }
 .contactFlex {
     display: flex;
+    list-style: none;
     padding: 20px;
 }
 
-.contactFlex p i {
+.contactIcons {
+    display: flex;
+    list-style: none;
+    ul {
     color: $primary1;
+    }
 }
 
 .contactAddress p i {

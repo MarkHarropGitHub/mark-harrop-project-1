@@ -353,6 +353,7 @@ h3:hover {
   color: #171717;
 }
 
+/* Header Section for the Home Page Begins */
 .homePage {
   background: #B9DDE7;
   height: 60vh;
@@ -404,6 +405,8 @@ h3:hover {
   width: 175px;
 }
 
+/* Main Section of the Home Page Begins */
+/* Section 1 Begins */
 .section1 {
   background: #F6F6F6;
   padding-top: 50px;
@@ -441,6 +444,7 @@ button:focus {
   color: #F38D8D;
 }
 
+/* Section 2 of Home Page Begins */
 .flex,
 .iconFlex {
   display: -webkit-box;
@@ -468,6 +472,7 @@ button:focus {
   padding-left: 25px;
 }
 
+/* Section 3 of Home Page Begins */
 .section3,
 .section5 {
   background: #FFF;
@@ -492,6 +497,7 @@ button:focus {
   background: #B9DDE7;
 }
 
+/* Section 4 of Home Page Begins */
 .section4 {
   padding: 50px 0;
 }
@@ -509,6 +515,7 @@ button:focus {
   margin-left: 50px;
 }
 
+/* Section 5 of Home Page Begins additional text */
 .section5 {
   padding: 50px 0;
 }
@@ -522,6 +529,7 @@ button:focus {
   width: 100%;
 }
 
+/* Header Section */
 .blogPageImageContainer {
   width: 100%;
   height: 360px;
@@ -530,6 +538,11 @@ button:focus {
   width: 100%;
 }
 
+* {
+  border: 1px solid red;
+}
+
+/* Main Section of Blog Begins */
 body {
   background: #F6F6F6;
   padding-bottom: 50px;
@@ -658,6 +671,8 @@ textarea {
   resize: none;
 }
 
+/* Main Section of Blog ends */
+/* Header Section of Contact Page Styling */
 .contactPageImageContainer {
   height: 360px;
 }
@@ -684,10 +699,17 @@ section .contactPosition h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
   padding: 20px;
 }
 
-.contactFlex p i {
+.contactIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.contactIcons ul {
   color: #227284;
 }
 
