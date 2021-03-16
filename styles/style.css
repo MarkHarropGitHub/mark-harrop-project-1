@@ -367,12 +367,12 @@ h3:hover {
 }
 
 .imageContainer {
-  width: 40%;
+  width: calc(85% / 2);
   height: 800px;
 }
 .imageContainer .headerImage {
   position: absolute;
-  top: 100px;
+  top: 125px;
   width: 31%;
   max-width: 475px;
   z-index: 10;
@@ -384,17 +384,15 @@ h3:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%;
+  width: calc(85% / 2);
 }
 .headerContainer h1 {
+  position: relative;
+  bottom: 80px;
   font-size: 7rem;
-  padding-bottom: 175px;
 }
 .headerContainer .position {
   position: relative;
@@ -445,6 +443,10 @@ button:focus {
 }
 
 /* Section 2 of Home Page Begins */
+.section2 {
+  height: 100%;
+}
+
 .flex,
 .iconFlex {
   display: -webkit-box;
@@ -473,28 +475,72 @@ button:focus {
 }
 
 /* Section 3 of Home Page Begins */
+.section3 {
+  padding-top: 0;
+}
+
 .section3,
 .section5 {
   background: #FFF;
 }
 
+.surfSection {
+  position: relative;
+  bottom: 20px;
+  height: 500px;
+}
+
 .surfBackground {
   background: #68B0C1;
-  width: 52%;
+  width: 50%;
+  height: 375px;
 }
 .surfBackground .surfImage {
-  width: 40%;
+  max-width: 600px;
+  width: 85%;
+  margin-left: auto;
 }
 .surfBackground .surfImage img {
+  -webkit-transform: translate(-25px, -25px);
+          transform: translate(-25px, -25px);
   width: 100%;
 }
 
+.harpersTravels {
+  width: 40%;
+  margin-right: 15%;
+}
+.harpersTravels h4,
+.harpersTravels p,
+.harpersTravels button {
+  margin-left: 50px;
+}
+.harpersTravels h4 {
+  padding: 120px 0 30px;
+}
+.harpersTravels p {
+  padding-bottom: 30px;
+}
+
 .favourite {
-  width: 50%;
+  width: 40%;
+  margin-left: 5%;
+}
+.favourite h4,
+.favourite p,
+.favourite button {
+  margin-left: 30px;
+}
+.favourite h4 {
+  padding: 80px 0 30px;
+}
+.favourite p {
+  padding-bottom: 30px;
 }
 
 .factoryBackground {
   background: #B9DDE7;
+  width: 50%;
 }
 
 /* Section 4 of Home Page Begins */
@@ -536,10 +582,6 @@ button:focus {
 }
 .blogPageImageContainer img {
   width: 100%;
-}
-
-* {
-  border: 1px solid red;
 }
 
 /* Main Section of Blog Begins */
