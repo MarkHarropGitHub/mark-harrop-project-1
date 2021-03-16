@@ -36,14 +36,13 @@
     }
     .position {
         position: relative;
-        right: 125px;
-        bottom: 125px;
+        right: 105px;
+        bottom: 115px;
         img {
-            width: 175px;
+            width: 150px;
         }
     }
 }
-
 
 /* Main Section of the Home Page Begins */
 
@@ -71,17 +70,11 @@
 button {
     background: $accent;
     font-family: $headerFont;
-    font-size: 1rem;
+    font-size: $mainFontSize;
     text-transform: uppercase;
     border: none;
     padding: 10px 20px;
     margin-bottom: 100px;
-}
-
-button:hover,
-button:focus {
-    background: $black;
-    color: $accent;
 }
 
 /* Section 2 of Home Page Begins */
@@ -134,12 +127,13 @@ button:focus {
 }
 
 .surfBackground {
+    position: relative;
     background: $primary2;
-    width: 50%;
+    width: 52%;
     height: 360px;
     .surfImage {
         max-width: 600px;
-        width: 85%;
+        width: 90%;
         margin-left: auto;
         img {
             position: relative;
@@ -168,11 +162,10 @@ button:focus {
 }
 
 .favourite {
-    width: 40%;
+    width: 35%;
     margin-left: 5%;
     h4,
-    p,
-    button {
+    p {
         margin-left: 30px;
     }
     h4 {
@@ -181,11 +174,22 @@ button:focus {
     p {
         padding-bottom: 30px;
     }
+
+    button {
+        margin-left: 25vw;
+    }
 }
 
 .factoryBackground {
+    position: absolute;
+    right: 0;
     background: $primary3;
-    width: 50%;
+    width: 52%;
+    .factoryImage {
+        position: relative;
+        right: 1vw;
+        bottom: 10px;
+    }
 }
 
 /* Section 4 of Home Page Begins */
@@ -198,6 +202,7 @@ button:focus {
 .journeyImageContainer {
     width: 30%;
     .journeyImage {
+        width: 100%;
         box-shadow: 15px 15px $primary1;
     }
 }
@@ -205,6 +210,10 @@ button:focus {
 .journeyTextContainer {
     width: 70%;
     margin-left: 50px;
+    p,
+    button {
+        margin-top: 35px;
+    }
 }
 
 /* Section 5 of Home Page Begins additional text */

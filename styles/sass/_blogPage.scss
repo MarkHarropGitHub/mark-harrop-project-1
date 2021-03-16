@@ -15,21 +15,13 @@ body {
     padding-bottom: 50px;
 }
 
-.blogImageContainer {
-    background: $white;
-    padding: 30px;
-    width: 100%;
-    .image {
-        width: 100%;
-        margin: 0;
-    }
-}
+
 
 .blogTitle {
     height: 1rem;
     h2 {
     position: relative;
-    bottom: 120px;
+    bottom: 110px;
     }
 }
 .blogColumns {
@@ -38,6 +30,27 @@ body {
 
 .column1 {
     width: 30%;
+    .blogImageContainer {
+        background: $white;
+        padding: 30px;
+        width: 100%;
+        .image {
+            width: 100%;
+            margin: 0;
+        }
+        h5 {
+            padding-top: 10px;
+        }
+    }
+}
+
+.recentPosts {
+    width: 100%;
+    background: $white;
+    margin-top: 20px;
+    ul {
+        margin-left: 30px;
+    }
 }
 
 .column2 {
@@ -48,11 +61,6 @@ body {
     width: 70%;
 }
 
-.recentPosts {
-    width: 100%;
-    background: $white;
-    margin-top: 20px;
-}
 
 .recentPosts,
 .blogPosts {
@@ -68,7 +76,6 @@ body {
 }
 
 .blogImageContainer p,
-.recentPosts ul,
 .blogPosts p {
     padding: 10px 0;
     font-family: $bodyFont;
@@ -76,6 +83,9 @@ body {
 
 .blogFlex {
     display: flex;
+    .blog p {
+        padding-left: 20px;
+    }
 }
 .hide { 
     position: absolute; 
@@ -95,17 +105,21 @@ form {
     flex-wrap: wrap;
     width: 100%;
     input {
-        justify-content: space-evenly;
+        display: flex;
+        justify-content: space-between;
         border: none;
-        width: 50%;
+        width: 49%;
         height: 60px;
         padding-left: 20px;
+    }
+
+    .email {
+        margin-left: 2%;
     }
     .textarea {
         width: 100%;
         height: 300px;
-        margin: 20px 0;
-       
+        margin: 20px 0; 
     }
 }
 

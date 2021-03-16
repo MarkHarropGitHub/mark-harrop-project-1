@@ -276,7 +276,7 @@ ul li {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -299,6 +299,13 @@ p,
 .recentPosts ul li {
   font-family: "Cabin", sans-serif;
   font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+button:hover,
+button:focus {
+  background: #171717;
+  color: #FFF;
 }
 
 .wrapper {
@@ -392,15 +399,15 @@ h3:hover {
 .headerContainer h1 {
   position: relative;
   bottom: 80px;
-  font-size: 7rem;
+  font-size: 6rem;
 }
 .headerContainer .position {
   position: relative;
-  right: 125px;
-  bottom: 125px;
+  right: 105px;
+  bottom: 115px;
 }
 .headerContainer .position img {
-  width: 175px;
+  width: 150px;
 }
 
 /* Main Section of the Home Page Begins */
@@ -434,12 +441,6 @@ button {
   border: none;
   padding: 10px 20px;
   margin-bottom: 100px;
-}
-
-button:hover,
-button:focus {
-  background: #171717;
-  color: #F38D8D;
 }
 
 /* Section 2 of Home Page Begins */
@@ -492,13 +493,14 @@ button:focus {
 }
 
 .surfBackground {
+  position: relative;
   background: #68B0C1;
-  width: 50%;
+  width: 52%;
   height: 360px;
 }
 .surfBackground .surfImage {
   max-width: 600px;
-  width: 85%;
+  width: 90%;
   margin-left: auto;
 }
 .surfBackground .surfImage img {
@@ -526,12 +528,11 @@ button:focus {
 }
 
 .favourite {
-  width: 40%;
+  width: 35%;
   margin-left: 5%;
 }
 .favourite h4,
-.favourite p,
-.favourite button {
+.favourite p {
   margin-left: 30px;
 }
 .favourite h4 {
@@ -540,10 +541,20 @@ button:focus {
 .favourite p {
   padding-bottom: 30px;
 }
+.favourite button {
+  margin-left: 25vw;
+}
 
 .factoryBackground {
+  position: absolute;
+  right: 0;
   background: #B9DDE7;
-  width: 50%;
+  width: 52%;
+}
+.factoryBackground .factoryImage {
+  position: relative;
+  right: 1vw;
+  bottom: 10px;
 }
 
 /* Section 4 of Home Page Begins */
@@ -555,6 +566,7 @@ button:focus {
   width: 30%;
 }
 .journeyImageContainer .journeyImage {
+  width: 100%;
   -webkit-box-shadow: 15px 15px #227284;
           box-shadow: 15px 15px #227284;
 }
@@ -562,6 +574,10 @@ button:focus {
 .journeyTextContainer {
   width: 70%;
   margin-left: 50px;
+}
+.journeyTextContainer p,
+.journeyTextContainer button {
+  margin-top: 35px;
 }
 
 /* Section 5 of Home Page Begins additional text */
@@ -593,22 +609,12 @@ body {
   padding-bottom: 50px;
 }
 
-.blogImageContainer {
-  background: #FFF;
-  padding: 30px;
-  width: 100%;
-}
-.blogImageContainer .image {
-  width: 100%;
-  margin: 0;
-}
-
 .blogTitle {
   height: 1rem;
 }
 .blogTitle h2 {
   position: relative;
-  bottom: 120px;
+  bottom: 110px;
 }
 
 .blogColumns {
@@ -619,6 +625,27 @@ body {
 
 .column1 {
   width: 30%;
+}
+.column1 .blogImageContainer {
+  background: #FFF;
+  padding: 30px;
+  width: 100%;
+}
+.column1 .blogImageContainer .image {
+  width: 100%;
+  margin: 0;
+}
+.column1 .blogImageContainer h5 {
+  padding-top: 10px;
+}
+
+.recentPosts {
+  width: 100%;
+  background: #FFF;
+  margin-top: 20px;
+}
+.recentPosts ul {
+  margin-left: 30px;
 }
 
 .column2 {
@@ -632,12 +659,6 @@ body {
   margin-left: 40px;
   padding-top: 0;
   width: 70%;
-}
-
-.recentPosts {
-  width: 100%;
-  background: #FFF;
-  margin-top: 20px;
 }
 
 .recentPosts,
@@ -654,7 +675,6 @@ body {
 }
 
 .blogImageContainer p,
-.recentPosts ul,
 .blogPosts p {
   padding: 10px 0;
   font-family: "Cabin", sans-serif;
@@ -664,6 +684,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.blogFlex .blog p {
+  padding-left: 20px;
 }
 
 .hide {
@@ -689,13 +712,19 @@ form {
   width: 100%;
 }
 form input {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: none;
-  width: 50%;
+  width: 49%;
   height: 60px;
   padding-left: 20px;
+}
+form .email {
+  margin-left: 2%;
 }
 form .textarea {
   width: 100%;
