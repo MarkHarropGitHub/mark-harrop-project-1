@@ -13,36 +13,65 @@ section {
     margin: 0;
     .contactPosition h2 {
         position: relative;
-        bottom: 105px;
+        bottom: 115px;
     }
+}
+
+.sectionFlex {
+    display: flex;
 }
 
 .contactInfo {
     background: $white;
     padding-top: 50px;
-}
-.contactFlex {
-    display: flex;
-    list-style: none;
-    padding: 20px;
+    width: 45%;
+    height: 320px;
+    .contactFlex {
+        display: flex;
+        list-style: none;
+        padding: 20px 0 10px 30px;
+    }
 }
 
 .contactIcons {
     display: flex;
     list-style: none;
-    ul {
-    color: $primary1;
+    li {
+        font-size: 1.5rem;
+        padding-right: 30px;
+    } i {
+        color: $primary1;
     }
 }
 
-.contactAddress p i {
-    color: $black;
-}
+
 
 .contactAddress {
-    padding: 20px;
+    padding: 30px;
     ul {
-    list-style: none;
-    padding: 0;
+        list-style: none;
+        padding: 0;
+        color: $black;
+        font-family: $bodyFont;
+        li {
+            padding-bottom: 15px;
+        }
+    ul:first-child {
+        font-weight: 800;
+    }
+    }
+}
+
+.contactForm {
+    margin-left: 40px;
+    input {
+        width: calc(100% / 2 - 10px);
+        padding-right: 2%;
+    }
+    .name {
+        margin-right: 20px;
+    }
+    .textarea {
+        width: 100%;
     }
 }

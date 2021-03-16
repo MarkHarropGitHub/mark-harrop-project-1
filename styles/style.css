@@ -732,20 +732,27 @@ section {
 }
 section .contactPosition h2 {
   position: relative;
-  bottom: 105px;
+  bottom: 115px;
+}
+
+.sectionFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contactInfo {
   background: #FFF;
   padding-top: 50px;
+  width: 45%;
+  height: 320px;
 }
-
-.contactFlex {
+.contactInfo .contactFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding: 20px;
+  padding: 20px 0 10px 30px;
 }
 
 .contactIcons {
@@ -754,20 +761,42 @@ section .contactPosition h2 {
   display: flex;
   list-style: none;
 }
-.contactIcons ul {
+.contactIcons li {
+  font-size: 1.5rem;
+  padding-right: 30px;
+}
+.contactIcons i {
   color: #227284;
 }
 
-.contactAddress p i {
-  color: #171717;
-}
-
 .contactAddress {
-  padding: 20px;
+  padding: 30px;
 }
 .contactAddress ul {
   list-style: none;
   padding: 0;
+  color: #171717;
+  font-family: "Cabin", sans-serif;
+}
+.contactAddress ul li {
+  padding-bottom: 15px;
+}
+.contactAddress ul ul:first-child {
+  font-weight: 800;
+}
+
+.contactForm {
+  margin-left: 40px;
+}
+.contactForm input {
+  width: calc(100% / 2 - 10px);
+  padding-right: 2%;
+}
+.contactForm .name {
+  margin-right: 20px;
+}
+.contactForm .textarea {
+  width: 100%;
 }
 
 footer {
@@ -794,6 +823,41 @@ footer p {
   margin: 10px auto;
 }
 
+/* Media query for screen sizes up to 1160px */
+@media (max-width: 1025px) {
+  /* Home Page Media Queries */
+  /* Blog Page Media Queries */
+  /* Contact Page Media Queries */
+  section {
+    padding-top: 0;
+  }
+  section .contactPosition h2 {
+    bottom: 160px;
+  }
+
+  .contactInfo {
+    width: 90vw;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+  }
+
+  .sectionFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .contactForm {
+    margin-left: 0;
+  }
+  .contactForm .textarea {
+    width: 100%;
+    margin: 30px auto;
+  }
+}
 @media (max-width: 480px) {
   h1 {
     font-size: 4rem;

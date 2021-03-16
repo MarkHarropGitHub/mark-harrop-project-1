@@ -1,3 +1,45 @@
+/* Media query for screen sizes up to 1160px */
+
+@media (max-width: 1025px) {
+
+    /* Home Page Media Queries */
+
+    /* Blog Page Media Queries */
+    
+    /* Contact Page Media Queries */
+
+
+    section {
+        padding-top: 0;
+        .contactPosition h2 {
+        bottom: 160px;
+        }
+    }
+
+    .contactInfo {
+        width: 90vw;
+        padding: 30px 30px;
+        margin-bottom: 30px;
+    }
+
+    .sectionFlex {
+        flex-direction: column;
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .contactForm {
+        margin-left: 0;
+        .textarea {
+            width: 100%;
+            margin: 30px auto;
+            
+        }
+    }
+}
+
+
+
 @media (max-width: 480px) {
     h1 {
         font-size: $headerFontSize2;
