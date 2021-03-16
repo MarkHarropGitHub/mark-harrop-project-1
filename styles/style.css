@@ -445,6 +445,7 @@ button:focus {
 /* Section 2 of Home Page Begins */
 .section2 {
   height: 100%;
+  padding-bottom: 50px;
 }
 
 .flex,
@@ -503,7 +504,7 @@ button:focus {
 .surfBackground .surfImage img {
   position: relative;
   right: 15px;
-  bottom: 15px;
+  bottom: 30px;
   width: 100%;
 }
 
