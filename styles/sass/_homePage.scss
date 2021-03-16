@@ -49,7 +49,6 @@
 /* Section 1 Begins */
 
 .section1 {
-    background: $primary4;
     padding-top: 50px;
     .whosHarper {
         padding-top: 60px;
@@ -82,6 +81,7 @@ button {
 .section2 {
     height: 100%;
     padding-bottom: 50px;
+    background: $primary4;
 }
 
 .flex,
@@ -111,85 +111,14 @@ button {
 
 /* Section 3 of Home Page Begins */
 
-.section3 {
-    padding-top: 0;
-}
-
 .section3,
 .section5 {
     background: $white;
 }
 
-.surfSection {
-    position: relative;
-    bottom: 20px;
-    height: 500px;
-}
-
-.surfBackground {
-    position: relative;
-    background: $primary2;
-    width: 52%;
-    height: 360px;
-    .surfImage {
-        max-width: 600px;
-        width: 90%;
-        margin-left: auto;
-        img {
-            position: relative;
-            right: 15px;
-            bottom: 30px;
-            width: 100%;
-        }
-    }
-}
-
-.harpersTravels {
-    width: 40%;
-    height: 375px;
-    margin-right: 15%;
-    h4,
-    p,
-    button {
-        margin-left: 75px;
-    }
-    h4 {
-        padding: 120px 0 30px;
-    }
-    p {
-        padding-bottom: 30px;
-    }
-}
-
-.favourite {
-    width: 35%;
-    margin-left: 5%;
-    h4,
-    p {
-        margin-left: 30px;
-    }
-    h4 {
-        padding: 80px 0 30px;
-    }
-    p {
-        padding-bottom: 30px;
-    }
-
-    button {
-        margin-left: 25vw;
-    }
-}
-
-.factoryBackground {
-    position: absolute;
-    right: 0;
-    background: $primary3;
-    width: 52%;
-    .factoryImage {
-        position: relative;
-        right: 1vw;
-        bottom: 10px;
-    }
+.factoryImage {
+    max-width: 600px;
+    width: 90%;
 }
 
 /* Section 4 of Home Page Begins */

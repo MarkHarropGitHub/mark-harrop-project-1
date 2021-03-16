@@ -74,6 +74,12 @@ p,
     line-height: 1.6rem;
 }
 
+.section1,
+.section3,
+.section5 {
+    background: $primary4;
+}
+
 button:hover,
 button:focus {
     background: $black;

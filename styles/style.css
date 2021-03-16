@@ -498,11 +498,13 @@ button {
   width: 52%;
   height: 360px;
 }
+
 .surfBackground .surfImage {
   max-width: 600px;
   width: 90%;
   margin-left: auto;
 }
+
 .surfBackground .surfImage img {
   position: relative;
   right: 15px;
@@ -546,13 +548,17 @@ button {
 }
 
 .factoryBackground {
-  position: absolute;
-  right: 0;
+  position: relative;
+  right: -7.5%;
   background: #B9DDE7;
   width: 52%;
+  height: 360px;
 }
 .factoryBackground .factoryImage {
   position: relative;
+  max-width: 600px;
+  margin-right: auto;
+  width: 90%;
   right: 1vw;
   bottom: 10px;
 }
@@ -852,7 +858,7 @@ footer p {
   margin: 10px auto;
 }
 
-/* Media query for screen sizes up to 1160px */
+/* Media query for screen sizes up to 1025px */
 @media (max-width: 1025px) {
   /* Home Page Media Queries */
   /* Blog Page Media Queries */
@@ -887,6 +893,7 @@ footer p {
     margin: 30px auto;
   }
 }
+/* Media query for screens up to 480px */
 @media (max-width: 480px) {
   h1 {
     font-size: 4rem;
