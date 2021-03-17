@@ -20,7 +20,8 @@
 
     .section2,
     .section3,
-    .section4 {
+    .section4,
+    .section5 {
         .flex {
         display: flex;
         flex-direction: column;
@@ -28,12 +29,22 @@
         }
     }
 
+    .section1 .whosHarper {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        button {
+            margin-bottom: 50px;
+        }
+    }
+
     .iconFlex {
          width: 100%;
          .iconContainer {
-             width: 100px;
+             width: 60px;
          }
          .textContainer {
+             width: 100%;
              h3 {
                 font-size: $headerFontSize4; 
                 margin-bottom: 20px;
@@ -147,6 +158,7 @@
     }
 
     .imageContainer {
+        margin: 0 auto;
         .headerImage {
             position: relative;
             top: 25px;
@@ -171,6 +183,7 @@
             }
         }
     }
+    
 
     /* Blog Media Queries */
 

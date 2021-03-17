@@ -11,7 +11,7 @@
         margin: 0 auto;
     }
     .flex {
-        // display: flex;
+        display: flex;
         .imageContainer {
             width: 45%;
         }
@@ -100,12 +100,12 @@ button {
 }
 
 .iconFlex {
-    width: 50%;
+    width: 100%;
     padding-bottom: 50px;
     .iconContainer {
         background: $primary3;
-        height: 45px;
-        width: 150px;
+        height: 50px;
+        width: 50px;
         border-radius: 50%;
         i {
             position: relative;
@@ -115,6 +115,7 @@ button {
     }
     .textContainer {
         padding-left: 25px;
+        width: 100%;
     }
 }
 

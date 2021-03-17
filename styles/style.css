@@ -382,6 +382,11 @@ h3:hover {
   width: 85%;
   margin: 0 auto;
 }
+.homePage .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .homePage .flex .imageContainer {
   width: 45%;
 }
@@ -474,13 +479,13 @@ button {
 }
 
 .iconFlex {
-  width: 50%;
+  width: 100%;
   padding-bottom: 50px;
 }
 .iconFlex .iconContainer {
   background: #B9DDE7;
-  height: 45px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
 }
 .iconFlex .iconContainer i {
@@ -490,6 +495,7 @@ button {
 }
 .iconFlex .textContainer {
   padding-left: 25px;
+  width: 100%;
 }
 
 /* Section 3 of Home Page Begins */
@@ -894,7 +900,8 @@ footer p {
 
   .section2 .flex,
 .section3 .flex,
-.section4 .flex {
+.section4 .flex,
+.section5 .flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -905,11 +912,23 @@ footer p {
     width: 100%;
   }
 
+  .section1 .whosHarper {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+  .section1 .whosHarper button {
+    margin-bottom: 50px;
+  }
+
   .iconFlex {
     width: 100%;
   }
   .iconFlex .iconContainer {
-    width: 100px;
+    width: 60px;
+  }
+  .iconFlex .textContainer {
+    width: 100%;
   }
   .iconFlex .textContainer h3 {
     font-size: 1.6rem;
@@ -1018,6 +1037,9 @@ footer p {
     padding-left: 22vw;
   }
 
+  .imageContainer {
+    margin: 0 auto;
+  }
   .imageContainer .headerImage {
     position: relative;
     top: 25px;
