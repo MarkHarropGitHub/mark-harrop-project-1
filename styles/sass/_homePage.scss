@@ -60,10 +60,11 @@
 
 .section1 {
     padding-top: 50px;
+    margin-bottom: 100px;
     .whosHarper {
-        padding-top: 60px;
+        padding-top: 40px;
         width: 40%;
-        margin-left: 45%;
+        margin: 0 0 50px 45%;
         align-items: right;
         h3,
         p {
@@ -169,17 +170,17 @@ button {
 
 .favouriteThings {
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     padding-left: 7.5%;
     h4,
     p {
-        padding: 0 60px 40px 0;
+        padding: 0 100px 40px 0;
     }
     h4 {
         padding-top: 50px;
     }
     button {
-        margin: 0 0 50px 50%;
+        margin: 0 0 50px 60%;
     }
 }
 
@@ -207,7 +208,7 @@ button {
 /* Section 4 of Home Page Begins */
 
 .section4 {
-    padding: 100px 0;
+    padding: 125px 0;
 }
 
 
@@ -234,13 +235,11 @@ button {
 /* Section 5 of Home Page Begins additional text */
 
 .section5 {
-    padding: 50px 0;
+    padding: 75px 0;
 }
 .section5ImageContainer {
-    width: 100%;
-    margin-right: 50px;
-    padding-top: 25px;
+    justify-content: space-between;
+    width: calc(100% - 20px);
     .sectFiveImage {
         width: 100%;
-    }
 }

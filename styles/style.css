@@ -612,16 +612,18 @@ button {
 
 /* Section 5 of Home Page Begins additional text */
 .section5 {
-  padding: 50px 0;
+  padding: 75px 0;
 }
 
 .section5ImageContainer {
-  width: 100%;
-  margin-right: 50px;
-  padding-top: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 20px);
 }
 .section5ImageContainer .sectFiveImage {
   width: 100%;
+  padding: 20px;
 }
 
 /* Header Section */
