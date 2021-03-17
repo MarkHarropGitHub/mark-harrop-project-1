@@ -12,7 +12,7 @@
     }
 
     .flex {
-        display: flex;
+        // display: flex;
         .imageContainer {
             width: 45%;
         }
@@ -24,7 +24,7 @@
 
 .imageContainer {
     width: calc(85% / 2);
-    height: 800px;
+    height: 100%;
     .headerImage {
         position: absolute;
         top: 125px;
@@ -40,14 +40,13 @@
     align-items: center;
     width: calc(85% / 2);
     h1 {
-        position: relative;
-        bottom: 80px;
+       margin-top: 60%;
         font-size: $headerFontSize1;
     }
     .position {
         position: relative;
+        top: 90px;
         right: 105px;
-        bottom: 115px;
         img {
             width: 150px;
         }
@@ -240,6 +239,8 @@ button {
 .section5ImageContainer {
     justify-content: space-between;
     width: calc(100% - 20px);
+    margin-right: 20px;
     .sectFiveImage {
         width: 100%;
+    }
 }

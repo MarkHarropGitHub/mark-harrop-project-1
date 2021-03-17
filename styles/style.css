@@ -382,11 +382,6 @@ h3:hover {
   width: 85%;
   margin: 0 auto;
 }
-.homePage .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .homePage .flex .imageContainer {
   width: 45%;
 }
@@ -396,7 +391,7 @@ h3:hover {
 
 .imageContainer {
   width: calc(85% / 2);
-  height: 800px;
+  height: 100%;
 }
 .imageContainer .headerImage {
   position: absolute;
@@ -418,14 +413,13 @@ h3:hover {
   width: calc(85% / 2);
 }
 .headerContainer h1 {
-  position: relative;
-  bottom: 80px;
+  margin-top: 60%;
   font-size: 6rem;
 }
 .headerContainer .position {
   position: relative;
+  top: 90px;
   right: 105px;
-  bottom: 115px;
 }
 .headerContainer .position img {
   width: 150px;
@@ -435,11 +429,12 @@ h3:hover {
 /* Section 1 Begins */
 .section1 {
   padding-top: 50px;
+  margin-bottom: 100px;
 }
 .section1 .whosHarper {
-  padding-top: 60px;
+  padding-top: 40px;
   width: 40%;
-  margin-left: 45%;
+  margin: 0 0 50px 45%;
   -webkit-box-align: right;
       -ms-flex-align: right;
           align-items: right;
@@ -551,18 +546,18 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 45%;
   padding-left: 7.5%;
 }
 .favouriteThings h4,
 .favouriteThings p {
-  padding: 0 60px 40px 0;
+  padding: 0 100px 40px 0;
 }
 .favouriteThings h4 {
   padding-top: 50px;
 }
 .favouriteThings button {
-  margin: 0 0 50px 50%;
+  margin: 0 0 50px 60%;
 }
 
 .factoryBackground {
@@ -586,7 +581,7 @@ button {
 
 /* Section 4 of Home Page Begins */
 .section4 {
-  padding: 100px 0;
+  padding: 125px 0;
 }
 
 .journeyImageContainer {
@@ -620,10 +615,10 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: calc(100% - 20px);
+  margin-right: 20px;
 }
 .section5ImageContainer .sectFiveImage {
   width: 100%;
-  padding: 20px;
 }
 
 /* Header Section */
@@ -886,12 +881,41 @@ footer p {
 /* Media query for screen sizes up to 1025px */
 @media (max-width: 1025px) {
   /* Home Page Media Queries */
-  .homepage .flex {
+  .flex h1 {
+    font-size: 4rem;
+    margin-top: 60%;
+  }
+  .flex .position {
+    position: relative;
+    top: 60px;
+    right: 70px;
+  }
+  .flex .position img {
+    width: 100px;
+  }
+
+  .section2 .flex,
+.section3 .flex,
+.section4 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+  }
+
+  .iconFlex {
+    width: 100%;
+  }
+  .iconFlex .iconContainer {
+    width: 100px;
+  }
+  .iconFlex .textContainer h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
   }
 
   /* Blog Page Media Queries */
@@ -930,16 +954,60 @@ footer p {
 /* Media query for screens up to 768px */
 @media (max-width: 768px) {
   /* Nav Media Queries */
+  nav ul {
+    padding: 20px 0;
+  }
+  nav ul li {
+    padding: 0 10px;
+  }
+
+  .smallNav {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .homePage .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homePage .flex .imageContainer {
+    width: 100%;
+    height: 500px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homePage .flex .imageContainer img {
+    width: 50%;
+  }
+  .homePage .flex .headerContainer {
+    margin: 0 auto;
+  }
+  .homePage .flex .headerContainer .headerAdjust {
+    width: 100%;
+    margin-top: 100%;
+  }
+  .homePage .flex .headerContainer .headerAdjust h1 {
+    padding-top: 200px;
+    margin: 0 auto;
+  }
+  .homePage .flex .headerContainer .position {
+    position: relative;
+  }
 }
 /* Media query for screens up to 480px */
 @media (max-width: 480px) {
-  nav ul {
-    padding: 20px 0 5px 5px;
-  }
-  nav ul h3 {
-    font-size: 1.2rem;
-  }
-
   h1 {
     font-size: 4rem;
   }
