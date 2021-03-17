@@ -418,8 +418,10 @@ h3:hover {
 }
 .headerContainer .position {
   position: relative;
-  top: 90px;
-  right: 105px;
+  bottom: -205px;
+  left: -105px;
+  width: 100%;
+  height: 100%;
 }
 .headerContainer .position img {
   width: 150px;
@@ -640,8 +642,8 @@ body {
   height: 1rem;
 }
 .blogTitle h2 {
-  position: relative;
-  bottom: 110px;
+  position: absolute;
+  top: 26vw;
 }
 
 .blogColumns {
@@ -742,9 +744,6 @@ form input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   border: none;
   width: 49%;
   height: 60px;
@@ -756,20 +755,20 @@ form .email {
 form .textarea {
   width: 100%;
   height: 300px;
+  border: none;
   margin: 20px 0;
+  resize: none;
 }
 
 form button {
   width: 100%;
+  margin-bottom: 20px;
 }
 
-textarea {
-  width: 100%;
-  height: 300px;
-  border: none;
-  padding: 20px;
-  margin-bottom: 20px;
-  resize: none;
+input,
+.textarea {
+  font-family: "Cabin", sans-serif;
+  vertical-align: top;
 }
 
 /* Main Section of Blog ends */
@@ -787,8 +786,8 @@ section {
   margin: 0;
 }
 section .contactPosition h2 {
-  position: relative;
-  bottom: 115px;
+  position: absolute;
+  top: 26vw;
 }
 
 .sectionFlex {
@@ -883,12 +882,11 @@ footer p {
   /* Home Page Media Queries */
   .flex h1 {
     font-size: 4rem;
-    margin-top: 60%;
+    margin-top: 75%;
   }
   .flex .position {
-    position: relative;
-    top: 60px;
-    right: 70px;
+    left: -70px;
+    bottom: -180px;
   }
   .flex .position img {
     width: 100px;
@@ -919,19 +917,49 @@ footer p {
   }
 
   /* Blog Page Media Queries */
+  .blogColumns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .blogColumns .column1 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .blogColumns .column2 {
+    width: 90%;
+    padding: 0;
+    margin: 40px auto 0 auto;
+  }
+  .blogColumns .blogPosts,
+.blogColumns .blogFlex {
+    width: 100%;
+  }
+
+  .blog {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .blog .blogImage {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   /* Contact Page Media Queries */
   section {
     padding-top: 0;
   }
   section .contactPosition h2 {
-    font-size: 2.1rem;
-    bottom: 140px;
+    font-size: 4rem;
   }
 
   .contactInfo {
-    width: 90%;
+    width: 100%;
     padding: 30px 30px;
-    margin: 0 auto 30px;
+    margin: 0 auto 30px 0;
   }
 
   .sectionFlex {
@@ -961,20 +989,14 @@ footer p {
     padding: 0 10px;
   }
 
-  .smallNav {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  .smallNav h3 {
+    display: none;
   }
 
+  /* Home Page Media Queries */
+  .homePage {
+    height: 700px;
+  }
   .homePage .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -983,32 +1005,47 @@ footer p {
   }
   .homePage .flex .imageContainer {
     width: 100%;
-    height: 500px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .homePage .flex .imageContainer img {
-    width: 50%;
+    height: 400px;
   }
   .homePage .flex .headerContainer {
-    margin: 0 auto;
-  }
-  .homePage .flex .headerContainer .headerAdjust {
     width: 100%;
-    margin-top: 100%;
-  }
-  .homePage .flex .headerContainer .headerAdjust h1 {
-    padding-top: 200px;
     margin: 0 auto;
   }
-  .homePage .flex .headerContainer .position {
+  .homePage .flex h1 {
+    width: 100%;
+    margin: 75px auto;
+    font-size: 4rem;
+    padding-left: 22vw;
+  }
+
+  .imageContainer .headerImage {
     position: relative;
+    top: 25px;
+    width: 100%;
+    max-width: 300px;
+    z-index: 10;
+    -webkit-box-shadow: 20px 20px white;
+            box-shadow: 20px 20px white;
+  }
+  .imageContainer .headerImage .headerAdjust {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .flex .position {
+    left: -70px;
+    bottom: 20px;
+  }
+  .flex .position img {
+    width: 100px;
+  }
+
+  /* Blog Media Queries */
+  .blogForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /* Media query for screens up to 480px */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 4rem;
-  }
-}

@@ -15,13 +15,11 @@ body {
     padding-bottom: 50px;
 }
 
-
-
 .blogTitle {
     height: 1rem;
     h2 {
-    position: relative;
-    bottom: 110px;
+        position: absolute;
+        top: 26vw;
     }
 }
 .blogColumns {
@@ -106,7 +104,6 @@ form {
     width: 100%;
     input {
         display: flex;
-        justify-content: space-between;
         border: none;
         width: 49%;
         height: 60px;
@@ -119,21 +116,23 @@ form {
     .textarea {
         width: 100%;
         height: 300px;
+        border: none;
         margin: 20px 0; 
+        resize: none;
     }
 }
 
 form button {
     width: 100%;
+    margin-bottom: 20px;
 }
 
-textarea {
-    width: 100%;
-    height: 300px;
-    border: none;
-    padding: 20px;
-    margin-bottom: 20px;
-    resize: none;
+input,
+.textarea {
+    font-family: $bodyFont;
+    vertical-align: top;
 }
+
+
 
 /* Main Section of Blog ends */

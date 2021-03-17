@@ -10,7 +10,6 @@
         width: 85%;
         margin: 0 auto;
     }
-
     .flex {
         // display: flex;
         .imageContainer {
@@ -45,8 +44,10 @@
     }
     .position {
         position: relative;
-        top: 90px;
-        right: 105px;
+        bottom: -205px;
+        left: -105px;
+        width: 100%;
+        height: 100%; 
         img {
             width: 150px;
         }

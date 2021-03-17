@@ -7,12 +7,11 @@
     .flex {
         h1 {
             font-size: $headerFontSize2;
-            margin-top: 60%;
+            margin-top: 75%;
         }
         .position {
-            position: relative;
-            top: 60px;
-            right: 70px;
+            left: -70px;
+            bottom: -180px;
             img {
                 width: 100px;
             } 
@@ -45,8 +44,33 @@
 
     /* Blog Page Media Queries */
 
+    .blogColumns {
+        flex-direction: column;
+        width: 100%;
+        .column1 {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .column2 {
+            width: 90%;
+            padding: 0;
+            margin: 40px auto 0 auto;
+        }
+        .blogPosts,
+        .blogFlex {
+            width: 100%;
+        }
+    }
 
-
+    .blog {
+        width: 80%;
+        margin: 0 auto;
+        .blogImage {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
     
     /* Contact Page Media Queries */
 
@@ -54,15 +78,14 @@
     section {
         padding-top: 0;
         .contactPosition h2 {
-            font-size: $headerFontSize3;
-            bottom: 140px;
+            font-size: $headerFontSize2;
         }
     }
 
     .contactInfo {
-        width: 90%;
+        width: 100%;
         padding: 30px 30px;
-        margin: 0 auto 30px;
+        margin: 0 auto 30px 0;
     }
 
     .sectionFlex {
@@ -92,54 +115,72 @@
         li {
             padding: 0 10px;
         }
-    
-    }
-    .smallNav {
-        position: absolute; 
-        width: 1px; 
-        height: 1px; 
-        margin: -1px; 
-        border: 0; 
-        padding: 0; 
-        white-space: 
-        nowrap; 
-        clip-path: inset(100%); 
-        clip: rect(0 0 0 0); 
-        overflow: hidden;
     }
 
-    .homePage .flex {
-        flex-direction: column;
-        .imageContainer {
-            width: 100%;
-            height: 500px;
-            align-items: center;
-            img {
-                width: 50%;
-            }
+    .smallNav {
+        h3 {
+            display: none;
         }
-        .headerContainer {
-            margin: 0 auto;
-            .headerAdjust {
-            width: 100%;
-            margin-top: 100%;
-            h1 {
-                padding-top: 200px;
+    }
+
+    /* Home Page Media Queries */
+
+    .homePage {
+        height: 700px;
+        .flex {
+            flex-direction: column;
+            .imageContainer {
+                width: 100%;
+                height: 400px;
+            }
+            .headerContainer {
+                width: 100%;
                 margin: 0 auto;
             }
-            
-            }
-            .position {
-                position: relative;
+            h1 {
+                width: 100%;
+                margin: 75px auto;
+                font-size: $headerFontSize2;
+                padding-left: 22vw;
             }
         }
-    }      
+    }
+
+    .imageContainer {
+        .headerImage {
+            position: relative;
+            top: 25px;
+            width: 100%;
+            max-width: 300px;
+            z-index: 10;
+            box-shadow: 20px 20px white;
+            .headerAdjust {
+                width: 100%;
+                margin: 0 auto;
+            }
+    }
+    
+    }
+
+    .flex {
+        .position {
+            left: -70px;
+            bottom: 20px;
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    /* Blog Media Queries */
+
+    .blogForm {
+        flex-direction: column;
+    }
 }
 /* Media query for screens up to 480px */
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: $headerFontSize2;
-    }
+    
 
 }
