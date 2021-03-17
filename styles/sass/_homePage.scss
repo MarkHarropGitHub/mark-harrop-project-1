@@ -10,6 +10,16 @@
         width: 85%;
         margin: 0 auto;
     }
+
+    .flex {
+        display: flex;
+        .imageContainer {
+            width: 45%;
+        }
+        .headerContainer {
+            width: 40%;
+        }
+    }
 }
 
 .imageContainer {
@@ -73,7 +83,6 @@ button {
     text-transform: uppercase;
     border: none;
     padding: 10px 20px;
-    margin-bottom: 100px;
 }
 
 /* Section 2 of Home Page Begins */
@@ -87,7 +96,6 @@ button {
 .flex,
 .iconFlex {
     display: flex;
-    padding-bottom: 30px;
 }
 
 .iconFlex {
@@ -116,15 +124,90 @@ button {
     background: $white;
 }
 
-.factoryImage {
-    max-width: 600px;
-    width: 90%;
+.section3 {
+    padding-top: 0;
+    position: relative;
+    bottom: 15px;
 }
+.surfBackground {
+    position: relative;
+    width: 50%;
+    height: 360px;
+    background: $primary2;
+    transform: translate(0, -20px);
+    .surfImage {
+        max-width: 600px;
+        position: absolute;
+        right: 120px;
+        bottom: 15px;
+        .surf {
+            width: 100%;
+            position: relative;
+            left: 100px;
+        }
+
+    }
+}
+
+.harpersTravels {
+    width: 40%;
+    align-items: flex-end;
+    h4,
+    p,
+    button {
+        margin: 0 0 30px 80px;
+        
+    }
+    h4 {
+        padding-top: 50px;
+    }
+    button {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+.favouriteThings {
+    flex-direction: column;
+    width: 50%;
+    padding-left: 7.5%;
+    h4,
+    p {
+        padding: 0 60px 40px 0;
+    }
+    h4 {
+        padding-top: 50px;
+    }
+    button {
+        margin: 0 0 50px 50%;
+    }
+}
+
+.factoryBackground {
+    position: relative;
+    top: 100px;
+    width: 50%;
+    height: 360px;
+    background: $primary3;
+    .factoryImage {
+        position: absolute;
+        max-width: 600px;
+        width: 90%;
+        .factory {
+            position: relative;
+            right: 25px;
+            bottom: 35px;
+            width: 100%;
+        }
+    }
+}
+
+
 
 /* Section 4 of Home Page Begins */
 
 .section4 {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 
@@ -133,6 +216,9 @@ button {
     .journeyImage {
         width: 100%;
         box-shadow: 15px 15px $primary1;
+        .building {
+            width: 100%;
+        }
     }
 }
 

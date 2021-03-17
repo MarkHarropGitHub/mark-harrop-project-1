@@ -302,6 +302,12 @@ p,
   line-height: 1.6rem;
 }
 
+.section1,
+.section3,
+.section5 {
+  background: #F6F6F6;
+}
+
 button:hover,
 button:focus {
   background: #171717;
@@ -352,6 +358,10 @@ nav ul li a:focus {
   color: #FFF;
 }
 
+.mobile {
+  visibility: hidden;
+}
+
 h3 {
   font-size: 2.1rem;
   text-transform: uppercase;
@@ -371,6 +381,17 @@ h3:hover {
   max-width: 1200px;
   width: 85%;
   margin: 0 auto;
+}
+.homePage .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.homePage .flex .imageContainer {
+  width: 45%;
+}
+.homePage .flex .headerContainer {
+  width: 40%;
 }
 
 .imageContainer {
@@ -413,7 +434,6 @@ h3:hover {
 /* Main Section of the Home Page Begins */
 /* Section 1 Begins */
 .section1 {
-  background: #F6F6F6;
   padding-top: 50px;
 }
 .section1 .whosHarper {
@@ -440,13 +460,13 @@ button {
   text-transform: uppercase;
   border: none;
   padding: 10px 20px;
-  margin-bottom: 100px;
 }
 
 /* Section 2 of Home Page Begins */
 .section2 {
   height: 100%;
   padding-bottom: 50px;
+  background: #F6F6F6;
 }
 
 .flex,
@@ -454,7 +474,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 30px;
 }
 
 .iconFlex {
@@ -477,95 +496,97 @@ button {
 }
 
 /* Section 3 of Home Page Begins */
-.section3 {
-  padding-top: 0;
-}
-
 .section3,
 .section5 {
   background: #FFF;
 }
 
-.surfSection {
+.section3 {
+  padding-top: 0;
   position: relative;
-  bottom: 20px;
-  height: 500px;
+  bottom: 15px;
 }
 
 .surfBackground {
   position: relative;
-  background: #68B0C1;
-  width: 52%;
+  width: 50%;
   height: 360px;
+  background: #68B0C1;
+  -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
 }
-
 .surfBackground .surfImage {
   max-width: 600px;
-  width: 90%;
-  margin-left: auto;
+  position: absolute;
+  right: 120px;
+  bottom: 15px;
 }
-
-.surfBackground .surfImage img {
-  position: relative;
-  right: 15px;
-  bottom: 30px;
+.surfBackground .surfImage .surf {
   width: 100%;
+  position: relative;
+  left: 100px;
 }
 
 .harpersTravels {
   width: 40%;
-  height: 375px;
-  margin-right: 15%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .harpersTravels h4,
 .harpersTravels p,
 .harpersTravels button {
-  margin-left: 75px;
+  margin: 0 0 30px 80px;
 }
 .harpersTravels h4 {
-  padding: 120px 0 30px;
+  padding-top: 50px;
 }
-.harpersTravels p {
-  padding-bottom: 30px;
+.harpersTravels button {
+  position: relative;
+  bottom: 0;
 }
 
-.favourite {
-  width: 35%;
-  margin-left: 5%;
+.favouriteThings {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding-left: 7.5%;
 }
-.favourite h4,
-.favourite p {
-  margin-left: 30px;
+.favouriteThings h4,
+.favouriteThings p {
+  padding: 0 60px 40px 0;
 }
-.favourite h4 {
-  padding: 80px 0 30px;
+.favouriteThings h4 {
+  padding-top: 50px;
 }
-.favourite p {
-  padding-bottom: 30px;
-}
-.favourite button {
-  margin-left: 25vw;
+.favouriteThings button {
+  margin: 0 0 50px 50%;
 }
 
 .factoryBackground {
   position: relative;
-  right: -7.5%;
-  background: #B9DDE7;
-  width: 52%;
+  top: 100px;
+  width: 50%;
   height: 360px;
+  background: #B9DDE7;
 }
 .factoryBackground .factoryImage {
-  position: relative;
+  position: absolute;
   max-width: 600px;
-  margin-right: auto;
   width: 90%;
-  right: 1vw;
-  bottom: 10px;
+}
+.factoryBackground .factoryImage .factory {
+  position: relative;
+  right: 25px;
+  bottom: 35px;
+  width: 100%;
 }
 
 /* Section 4 of Home Page Begins */
 .section4 {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .journeyImageContainer {
@@ -575,6 +596,9 @@ button {
   width: 100%;
   -webkit-box-shadow: 15px 15px #227284;
           box-shadow: 15px 15px #227284;
+}
+.journeyImageContainer .journeyImage .building {
+  width: 100%;
 }
 
 .journeyTextContainer {
@@ -824,11 +848,10 @@ section .contactPosition h2 {
   margin-left: 40px;
 }
 .contactForm input {
-  width: calc(100% / 2 - 10px);
-  padding-right: 2%;
+  width: calc(100% / 2 - 2%);
 }
 .contactForm .name {
-  margin-right: 20px;
+  margin-right: 2%;
 }
 .contactForm .textarea {
   width: 100%;
@@ -861,19 +884,28 @@ footer p {
 /* Media query for screen sizes up to 1025px */
 @media (max-width: 1025px) {
   /* Home Page Media Queries */
+  .homepage .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+
   /* Blog Page Media Queries */
   /* Contact Page Media Queries */
   section {
     padding-top: 0;
   }
   section .contactPosition h2 {
-    bottom: 160px;
+    font-size: 2.1rem;
+    bottom: 140px;
   }
 
   .contactInfo {
-    width: 90vw;
+    width: 90%;
     padding: 30px 30px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
   }
 
   .sectionFlex {
@@ -881,7 +913,7 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 90vw;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -893,8 +925,19 @@ footer p {
     margin: 30px auto;
   }
 }
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+  /* Nav Media Queries */
+}
 /* Media query for screens up to 480px */
 @media (max-width: 480px) {
+  nav ul {
+    padding: 20px 0 5px 5px;
+  }
+  nav ul h3 {
+    font-size: 1.2rem;
+  }
+
   h1 {
     font-size: 4rem;
   }

@@ -2,7 +2,14 @@
 
 @media (max-width: 1025px) {
 
+   
+
     /* Home Page Media Queries */
+
+    .homepage .flex {
+            flex-direction: column;
+            width: 100%;
+    }
 
     /* Blog Page Media Queries */
     
@@ -12,22 +19,23 @@
     section {
         padding-top: 0;
         .contactPosition h2 {
-        bottom: 160px;
+            font-size: $headerFontSize3;
+            bottom: 140px;
         }
     }
 
     .contactInfo {
-        width: 90vw;
+        width: 90%;
         padding: 30px 30px;
-        margin-bottom: 30px;
+        margin: 0 auto 30px;
     }
 
     .sectionFlex {
         flex-direction: column;
-        width: 90vw;
+        width: 90%;
         margin: 0 auto;
     }
-
+    
     .contactForm {
         margin-left: 0;
         .textarea {
@@ -38,9 +46,27 @@
     }
 }
 
+/* Media query for screens up to 768px */
+
+@media (max-width: 768px) {
+   
+     /* Nav Media Queries */
+
+    
+
+}
+
 /* Media query for screens up to 480px */
 
 @media (max-width: 480px) {
+
+    nav ul {
+        padding: 20px 0 5px 5px;
+        h3 {
+            font-size: $headerFontSize5;
+        }
+    }
+    
     h1 {
         font-size: $headerFontSize2;
     }
