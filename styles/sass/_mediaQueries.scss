@@ -258,4 +258,29 @@
         font-size: $headerFontSize3;
     }
 
+    .blogFlex {
+        flex-direction: column;
+    }
+
+    form {
+        input {
+            width: 100%;
+            flex-direction: column;
+        }
+        .email {
+            margin: 20px 0 0 0;
+        }
+    }
+
+    /* Contact Page Media query for screen up to 480px */
+
+    .contactForm {
+        input {
+        flex-direction: column;
+        width: 100%;
+        }
+    }
+    .contactForm .name {
+            margin-right: 0;
+        }
 }
