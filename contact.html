@@ -11,17 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Link to Font Awesome -->
-
-    <script src="https://kit.fontawesome.com/cff79ad442.js" crossorigin="anonymous"></script>
-
     <!-- Link to CSS style sheet -->
 
     <link rel="stylesheet" href="./styles/style.css">
-    
 
+    <!-- Link to Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/cff79ad442.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
+
+    <!-- Contact Page Nav Begins -->
+
     <nav id="home"> 
         <ul>
             <li><a href="./index.html">Home</a></li>
@@ -35,48 +37,67 @@
         <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Contact Page Nav Ends -->
+
+    <!-- Contact Page Header Begins -->
+
     <header>
         <div class="contactPageImageContainer">
             <img src="./assets/contact/contact-image-1.jpg" alt="purple blue water reflection">
         </div>
     </header>
-    <section class="sectionFlex">
-        <div class="wrapper contactPosition">
-            <h2>Contact me</h2>
-        </div>
-    </section>
-    <section class="wrapper sectionFlex">
-        <div class="contactInfo">
-            <div class="contactFlex">
-                <ul class="contactIcons">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                </ul>
-            </div>
-            <div class="contactAddress">
-                <ul>
-                    <li class="emailContact">info<i class="fas fa-at"></i>email.com</li>
-                    <li>123-456-7890</li>
-                    <li>123 Queen Street West, Unit 10</li>
-                    <li>M5V2D5</li>
-                </ul>
-            </div>
-        </div>
-        <form class="contactForm" action="POST">
-            <label class="hide" for="name">Name</label>
-            <input type="name" class="name"id="name" placeholder="Name">
-            <label class="hide" for="email">Email address</label>
-            <input type="email" class="email" id="email" placeholder="Email address">
-            <label for=""></label>
-            <input type="text" class="textarea" placeholder="Message">
-            <button type="submit">Submit</button>
-        </form>
 
-    </section>
+    <!-- Contact Page Header Ends -->
+
+    <!-- Contact Page Main Begins -->
+
+    <main>
+        <section class="sectionFlex">
+            <div class="wrapper contactPosition">
+                <h2>Contact me</h2>
+            </div>
+        </section>
+        <section class="wrapper sectionFlex">
+            <div class="contactInfo">
+                <div class="contactFlex">
+                    <ul class="contactIcons">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </div>
+                <div class="contactAddress">
+                    <ul>
+                        <li class="emailContact">info<i class="fas fa-at"></i>email.com</li>
+                        <li>123-456-7890</li>
+                        <li>123 Queen Street West, Unit 10</li>
+                        <li>M5V2D5</li>
+                    </ul>
+                </div>
+            </div>
+            <form class="contactForm" action="POST">
+                <label class="hide" for="name">Name</label>
+                <input type="name" class="name"id="name" placeholder="Name">
+                <label class="hide" for="email">Email address</label>
+                <input type="email" class="email" id="email" placeholder="Email address">
+                <label for=""></label>
+                <input type="text" class="textarea" placeholder="Message">
+                <button type="submit">Submit</button>
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Contact Page Main Ends -->
+
+    <!-- Contact Page Footer Begins -->
+
     <footer>
         <p>Copyright <i class="far fa-copyright"></i> 2018 HackerYou</p>
     </footer>
+
+    <!-- Contact Page Footer Ends -->
 </body>
 </html>

@@ -1,3 +1,5 @@
+/* Importing of various SASS files */
+/* Variables set up for Website */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -320,6 +322,7 @@ button:focus {
   margin: 0 auto;
 }
 
+/* Nav Styling */
 nav {
   background: #B9DDE7;
   font-family: "Oswald", sans-serif;
@@ -585,7 +588,7 @@ button {
   margin-top: 35px;
 }
 
-/* Section 5 of Home Page Begins additional text */
+/* Section 5 of Home Page Begins */
 .section5 {
   padding: 75px 0;
 }
@@ -601,7 +604,7 @@ button {
   width: 100%;
 }
 
-/* Header Section */
+/* Blog Page Header Styling*/
 .blogPageImageContainer {
   width: 100%;
 }
@@ -609,7 +612,7 @@ button {
   width: 100%;
 }
 
-/* Main Section of Blog Begins */
+/* Blog Page Main Styling */
 body {
   background: #F6F6F6;
   padding-bottom: 50px;
@@ -749,8 +752,7 @@ input,
   vertical-align: top;
 }
 
-/* Main Section of Blog ends */
-/* Header Section of Contact Page Styling */
+/* Contact Page Styling */
 .contactPageImageContainer img {
   width: 100%;
 }
@@ -829,6 +831,7 @@ section .contactPosition h2 {
   width: 100%;
 }
 
+/* Footer Styling */
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -912,6 +915,17 @@ footer p {
     width: 100%;
   }
 
+  .harpersTravels h4,
+.harpersTravels p,
+.favouriteThings h4,
+.favouriteThings p {
+    text-align: center;
+  }
+  .harpersTravels button,
+.favouriteThings button {
+    width: 100%;
+  }
+
   .surfBackground,
 .factoryBackground,
 .surfImage,
@@ -921,18 +935,6 @@ footer p {
     right: 0;
     top: 0;
     margin: 0 auto;
-  }
-
-  .harpersTravels h4,
-.harpersTravels p,
-.favouriteThings h4,
-.favouriteThings p {
-    text-align: center;
-  }
-  .harpersTravels button,
-.favouriteThings button {
-    -ms-flex-item-align: center;
-        align-self: center;
   }
 
   .journeyImageContainer {
@@ -949,9 +951,6 @@ footer p {
     text-align: center;
   }
   .journeyTextContainer button {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
   }
 
@@ -1092,7 +1091,18 @@ footer p {
 }
 /* Media query for screens up to 480px */
 @media (max-width: 480px) {
-  /* Blog page media queries for screens up to 480px */
+  /* Home Page media query for screens up to 480px */
+  .homePage .flex h1 {
+    padding-left: 0;
+    margin-top: 120px;
+  }
+
+  .flex .position {
+    bottom: 0;
+    left: -70px;
+  }
+
+  /* Blog page media query for screens up to 480px */
   section .contactPosition h2 {
     font-size: 2.1rem;
   }

@@ -59,6 +59,18 @@
         width: 100%;
     }
 
+    .harpersTravels,
+    .favouriteThings {
+        h4,
+        p {
+            text-align: center;
+        }
+        button {
+            width: 100%;
+        }
+    }
+
+
     .surfBackground,
     .factoryBackground,
     .surfImage,
@@ -69,17 +81,6 @@
         top: 0;
         margin: 0 auto;
     }
-
-    .harpersTravels,
-    .favouriteThings {
-        h4,
-        p {
-            text-align: center;
-        }
-        button {
-            align-self: center;
-        }
-    };
 
     .journeyImageContainer {
         width: 50%;
@@ -93,7 +94,6 @@
            text-align: center;
         }
         button {
-            align-items: center;
             width: 100%;
         }
     }
@@ -214,7 +214,7 @@
                 width: 100%;
                 margin: 0 auto;
             }
-    }
+        }
     
     }
 
@@ -235,11 +235,24 @@
         flex-direction: column;
     }
 }
+
 /* Media query for screens up to 480px */
 
 @media (max-width: 480px) {
-    
-    /* Blog page media queries for screens up to 480px */
+
+    /* Home Page media query for screens up to 480px */
+
+    .homePage .flex h1 {
+        padding-left: 0;
+        margin-top: 120px;
+    }
+
+    .flex .position {
+        bottom: 0;
+        left: -70px;
+    }
+
+    /* Blog page media query for screens up to 480px */
 
     section .contactPosition h2 {
         font-size: $headerFontSize3;
