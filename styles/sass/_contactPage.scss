@@ -1,7 +1,6 @@
 /* Header Section of Contact Page Styling */
 
 .contactPageImageContainer {
-    height: 360px;
     img {
         width: 100%;
     }
@@ -19,6 +18,7 @@ section {
 
 .sectionFlex {
     display: flex;
+    margin-top: 50px;
 }
 
 .contactInfo {

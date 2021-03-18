@@ -114,8 +114,12 @@ button {
         }
     }
     .textContainer {
-        padding-left: 25px;
+        padding: 5px 15px;
         width: 100%;
+        margin-bottom: 30px;
+        h4 {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -131,79 +135,49 @@ button {
     position: relative;
     bottom: 15px;
 }
+
 .surfBackground {
     position: relative;
+    bottom: 25px;
     width: 50%;
-    height: 360px;
-    background: $primary2;
-    transform: translate(0, -20px);
+    background: $primary1;
+    margin-bottom: 50px;
     .surfImage {
-        max-width: 600px;
-        position: absolute;
-        right: 120px;
+        position: relative;
+        right: -50px;
         bottom: 15px;
+        width: 90%;
         .surf {
             width: 100%;
-            position: relative;
-            left: 100px;
         }
-
     }
 }
 
-.harpersTravels {
-    width: 40%;
-    align-items: flex-end;
-    h4,
-    p,
-    button {
-        margin: 0 0 30px 80px;
-        
-    }
-    h4 {
-        padding-top: 50px;
-    }
-    button {
-        position: relative;
-        bottom: 0;
-    }
-}
-
+.harpersTravels,
 .favouriteThings {
-    flex-direction: column;
-    width: 45%;
-    padding-left: 7.5%;
+    width: 50%;
+    padding: 80px;
     h4,
     p {
-        padding: 0 100px 40px 0;
-    }
-    h4 {
-        padding-top: 50px;
-    }
-    button {
-        margin: 0 0 50px 60%;
+        padding-bottom: 30px;
     }
 }
 
 .factoryBackground {
     position: relative;
-    top: 100px;
+    top: 40px;
     width: 50%;
-    height: 360px;
     background: $primary3;
     .factoryImage {
-        position: absolute;
-        max-width: 600px;
+        position: relative;
+        right: 26px;
+        bottom: -35px;
         width: 90%;
         .factory {
-            position: relative;
-            right: 25px;
-            bottom: 35px;
             width: 100%;
         }
     }
 }
-
 
 
 /* Section 4 of Home Page Begins */

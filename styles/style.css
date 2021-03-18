@@ -494,8 +494,12 @@ button {
   top: 30%;
 }
 .iconFlex .textContainer {
-  padding-left: 25px;
+  padding: 5px 15px;
   width: 100%;
+  margin-bottom: 30px;
+}
+.iconFlex .textContainer h4 {
+  margin-bottom: 30px;
 }
 
 /* Section 3 of Home Page Begins */
@@ -512,78 +516,46 @@ button {
 
 .surfBackground {
   position: relative;
+  bottom: 25px;
   width: 50%;
-  height: 360px;
-  background: #68B0C1;
-  -webkit-transform: translate(0, -20px);
-          transform: translate(0, -20px);
+  background: #227284;
+  margin-bottom: 50px;
 }
 .surfBackground .surfImage {
-  max-width: 600px;
-  position: absolute;
-  right: 120px;
+  position: relative;
+  right: -50px;
   bottom: 15px;
+  width: 90%;
 }
 .surfBackground .surfImage .surf {
   width: 100%;
-  position: relative;
-  left: 100px;
 }
 
-.harpersTravels {
-  width: 40%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.harpersTravels,
+.favouriteThings {
+  width: 50%;
+  padding: 80px;
 }
 .harpersTravels h4,
 .harpersTravels p,
-.harpersTravels button {
-  margin: 0 0 30px 80px;
-}
-.harpersTravels h4 {
-  padding-top: 50px;
-}
-.harpersTravels button {
-  position: relative;
-  bottom: 0;
-}
-
-.favouriteThings {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 45%;
-  padding-left: 7.5%;
-}
 .favouriteThings h4,
 .favouriteThings p {
-  padding: 0 100px 40px 0;
-}
-.favouriteThings h4 {
-  padding-top: 50px;
-}
-.favouriteThings button {
-  margin: 0 0 50px 60%;
+  padding-bottom: 30px;
 }
 
 .factoryBackground {
   position: relative;
-  top: 100px;
+  top: 40px;
   width: 50%;
-  height: 360px;
   background: #B9DDE7;
 }
 .factoryBackground .factoryImage {
-  position: absolute;
-  max-width: 600px;
+  position: relative;
+  right: 26px;
+  bottom: -35px;
   width: 90%;
 }
 .factoryBackground .factoryImage .factory {
-  position: relative;
-  right: 25px;
-  bottom: 35px;
   width: 100%;
 }
 
@@ -632,7 +604,6 @@ button {
 /* Header Section */
 .blogPageImageContainer {
   width: 100%;
-  height: 360px;
 }
 .blogPageImageContainer img {
   width: 100%;
@@ -656,6 +627,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 50px;
 }
 
 .column1 {
@@ -779,9 +751,6 @@ input,
 
 /* Main Section of Blog ends */
 /* Header Section of Contact Page Styling */
-.contactPageImageContainer {
-  height: 360px;
-}
 .contactPageImageContainer img {
   width: 100%;
 }
@@ -800,6 +769,7 @@ section .contactPosition h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 50px;
 }
 
 .contactInfo {
@@ -883,9 +853,9 @@ footer p {
   margin: 10px auto;
 }
 
-/* Media query for screen sizes up to 1025px */
-@media (max-width: 1025px) {
-  /* Home Page Media Queries */
+/* Media query for screen sizes up to 1024px */
+@media (max-width: 1024px) {
+  /* Home Page Media Queries for screens up to 1024px */
   .flex h1 {
     font-size: 4rem;
     margin-top: 75%;
@@ -935,13 +905,67 @@ footer p {
     margin-bottom: 20px;
   }
 
-  /* Blog Page Media Queries */
+  .surfBackground,
+.harpersTravels,
+.favouriteThings,
+.factoryBackground {
+    width: 100%;
+  }
+
+  .surfBackground,
+.factoryBackground,
+.surfImage,
+.factoryImage {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .harpersTravels h4,
+.harpersTravels p,
+.favouriteThings h4,
+.favouriteThings p {
+    text-align: center;
+  }
+  .harpersTravels button,
+.favouriteThings button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .journeyImageContainer {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .journeyTextContainer {
+    margin: 50px auto;
+    width: 90%;
+  }
+  .journeyTextContainer h3,
+.journeyTextContainer p {
+    text-align: center;
+  }
+  .journeyTextContainer button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+
+  .section5ImageContainer {
+    width: 70%;
+    margin: 15px auto;
+  }
+
+  /* Blog Page Media Queries for screens up to 1024px */
   .blogColumns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
   }
   .blogColumns .column1 {
     width: 90%;
@@ -967,12 +991,9 @@ footer p {
     margin: 0 auto;
   }
 
-  /* Contact Page Media Queries */
+  /* Contact Page Media Queries for screens up to 1024px */
   section {
     padding-top: 0;
-  }
-  section .contactPosition h2 {
-    font-size: 4rem;
   }
 
   .contactInfo {
@@ -986,8 +1007,7 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
   .contactForm {
@@ -1000,7 +1020,7 @@ footer p {
 }
 /* Media query for screens up to 768px */
 @media (max-width: 768px) {
-  /* Nav Media Queries */
+  /* Nav Media Queries for screens up to 768px */
   nav ul {
     padding: 20px 0;
   }
@@ -1012,7 +1032,7 @@ footer p {
     display: none;
   }
 
-  /* Home Page Media Queries */
+  /* Home Page Media Queries for screens up to 768px */
   .homePage {
     height: 700px;
   }
@@ -1062,7 +1082,7 @@ footer p {
     width: 100px;
   }
 
-  /* Blog Media Queries */
+  /* Blog Media Queries for screens up to 768px */
   .blogForm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1071,3 +1091,9 @@ footer p {
   }
 }
 /* Media query for screens up to 480px */
+@media (max-width: 480px) {
+  /* Blog page media queries for screens up to 480px */
+  section .contactPosition h2 {
+    font-size: 2.1rem;
+  }
+}

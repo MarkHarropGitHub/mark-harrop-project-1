@@ -1,8 +1,8 @@
-/* Media query for screen sizes up to 1025px */
+/* Media query for screen sizes up to 1024px */
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
 
-    /* Home Page Media Queries */
+    /* Home Page Media Queries for screens up to 1024px */
 
     .flex {
         h1 {
@@ -50,14 +50,63 @@
                 margin-bottom: 20px;
              }
          }
-
     }
 
-    /* Blog Page Media Queries */
+    .surfBackground,
+    .harpersTravels,
+    .favouriteThings,
+    .factoryBackground {
+        width: 100%;
+    }
+
+    .surfBackground,
+    .factoryBackground,
+    .surfImage,
+    .factoryImage {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+    }
+
+    .harpersTravels,
+    .favouriteThings {
+        h4,
+        p {
+            text-align: center;
+        }
+        button {
+            align-self: center;
+        }
+    };
+
+    .journeyImageContainer {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .journeyTextContainer {
+        margin: 50px auto;
+        width: 90%;
+        h3,
+        p {
+           text-align: center;
+        }
+        button {
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    .section5ImageContainer {
+        width: 70%;
+        margin: 15px auto;
+    }
+    
+    /* Blog Page Media Queries for screens up to 1024px */
 
     .blogColumns {
         flex-direction: column;
-        width: 100%;
         .column1 {
             width: 90%;
             margin: 0 auto;
@@ -83,14 +132,10 @@
         }
     }
     
-    /* Contact Page Media Queries */
-
+    /* Contact Page Media Queries for screens up to 1024px */
 
     section {
         padding-top: 0;
-        .contactPosition h2 {
-            font-size: $headerFontSize2;
-        }
     }
 
     .contactInfo {
@@ -101,8 +146,7 @@
 
     .sectionFlex {
         flex-direction: column;
-        width: 90%;
-        margin: 0 auto;
+        margin: 50px auto;
     }
     
     .contactForm {
@@ -119,7 +163,7 @@
 
 @media (max-width: 768px) {
    
-    /* Nav Media Queries */
+    /* Nav Media Queries for screens up to 768px */
 
     nav ul {
         padding: 20px 0;
@@ -134,7 +178,7 @@
         }
     }
 
-    /* Home Page Media Queries */
+    /* Home Page Media Queries for screens up to 768px */
 
     .homePage {
         height: 700px;
@@ -185,7 +229,7 @@
     }
     
 
-    /* Blog Media Queries */
+    /* Blog Media Queries for screens up to 768px */
 
     .blogForm {
         flex-direction: column;
@@ -195,5 +239,10 @@
 
 @media (max-width: 480px) {
     
+    /* Blog page media queries for screens up to 480px */
+
+    section .contactPosition h2 {
+        font-size: $headerFontSize3;
+    }
 
 }
