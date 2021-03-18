@@ -555,7 +555,7 @@ button {
 .factoryBackground .factoryImage {
   position: relative;
   right: 26px;
-  bottom: -35px;
+  bottom: 19px;
   width: 90%;
 }
 .factoryBackground .factoryImage .factory {
