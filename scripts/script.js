@@ -1,0 +1,1 @@
+const mobileNav = document.querySelector('nav');
