@@ -684,6 +684,10 @@ body {
   padding-bottom: 20px;
 }
 
+.border {
+  border-bottom: 5px solid #227284;
+}
+
 .blogImageContainer p,
 .blogPosts p {
   padding: 10px 0;

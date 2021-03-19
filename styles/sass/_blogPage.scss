@@ -73,6 +73,10 @@ body {
     }
 }
 
+.border {
+    border-bottom: 5px solid $primary1;
+}
+
 .blogImageContainer p,
 .blogPosts p {
     padding: 10px 0;
