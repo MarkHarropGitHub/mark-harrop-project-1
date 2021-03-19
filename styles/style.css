@@ -1130,6 +1130,10 @@ footer p {
   }
 
   /* Contact Page Media query for screen up to 480px */
+  .contactPosition h2 {
+    font-size: 2.1rem;
+  }
+
   .contactForm input {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -274,6 +274,10 @@
 
     /* Contact Page Media query for screen up to 480px */
 
+    .contactPosition h2 {
+        font-size: $headerFontSize3;
+    }
+
     .contactForm {
         input {
         flex-direction: column;
