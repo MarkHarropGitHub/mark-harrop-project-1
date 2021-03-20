@@ -588,6 +588,55 @@ button {
   margin-top: 35px;
 }
 
+/* Modal is hidden by default and only shows when clicked on the 'Find out more' button */
+.myModal {
+  display: none;
+  position: relative;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  margin-top: 50px;
+  width: 100%;
+  height: 70%;
+  border: 4px solid #B9DDE7;
+}
+
+.moreContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.imageSize {
+  width: 100%;
+}
+
+.closeModal {
+  position: relative;
+  top: 15px;
+  right: 10px;
+  color: #171717;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: #F38D8D;
+}
+
+.moreContent img,
+.moreContent p {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /* Section 5 of Home Page Begins */
 .section5 {
   padding: 75px 0;

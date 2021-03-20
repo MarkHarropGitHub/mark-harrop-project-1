@@ -21,7 +21,7 @@
 
     <!-- Nav Begins -->
 
-    <nav id="home" class="full"> 
+    <nav id="home" class="fullNav"> 
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -31,7 +31,7 @@
         </div>
         <ul>
             <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact</a></li> 
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -150,10 +150,16 @@
                     <h3>Harper's Journey</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestias dolor neque voluptate fugit, quod reprehenderit sit facilis consectetur iste earum harum voluptatibus in natus amet laudantium, repellendus aliquam nihil debitis minima perspiciatis recusandae. Accusantium illo voluptatem veniam ratione dolorem deleniti culpa minus corrupti commodi? Illum, corrupti reiciendis. Vitae ad consectetur suscipit sint illum.
                     </p>
-                    <div class="center">
-                        <button>Find out more</button>
+                    <button type="button" id="openMore">Find out more</button>
+                    <div id="findOutMore" class="myModal">
+                        <div class="moreContent">
+                            <img class="imageSize" src="" id="travelImage" alt="">
+                            <p id="addedContent"></p>
+                        </div>
+                        <div>
+                            <span class="closeModal"><i class="fas fa-times"></i></span>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -183,5 +189,7 @@
     </footer>
 
     <!-- Footer Ends -->
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
