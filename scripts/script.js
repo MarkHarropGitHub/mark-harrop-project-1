@@ -16,6 +16,7 @@ openModal.addEventListener('click', function() {
 
     journeyModal.style.display = "flex";
     document.getElementById('travelImage').src = "http://cdn.cnn.com/cnnnext/dam/assets/181010131059-australia-best-beaches-cossies-beach-cocos3.jpg";
+    document.getElementById('travelImage').alt = "Australia's best beaches";
     document.getElementById('addedContent').innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, omnis. Dicta corrupti nobis sed pariatur labore quod, voluptate porro quam dolore repellendus facere expedita atque magnam laboriosam ad molestias reiciendis dolorem! Tenetur, asperiores illum.";
     
 });
